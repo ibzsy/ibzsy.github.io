@@ -1,0 +1,43 @@
+baseURL = "https://ibzsy.github.io/"
+title = "ibzsy"
+theme = "etch"
+languageCode = "en-UK"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  description = "ibzsy's blog"
+  copyright = "Copyright © 2024 Ibrahim"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "books"
+    name = "books"
+    title = "books"
+    url = "/books/"
+    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[taxonomies]
+  tag = nan
+  category = nan
