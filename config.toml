@@ -22,13 +22,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     weight = 10
 
   [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 20
-
-  [[menu.main]]
     identifier = "books"
     name = "books"
     title = "books"

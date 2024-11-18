@@ -6,6 +6,7 @@ title = "Books"
 
 ### Reading
  - Atomic Habbits (Re-reading) - James Clear
+ - Thinking, Fast and Slow - Daniel Kahneman
 
 ### Read
 - Man's Search for Meaning - Viktor Frankl
