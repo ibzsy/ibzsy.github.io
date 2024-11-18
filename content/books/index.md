@@ -12,3 +12,7 @@ title = "Books"
 - Man's Search for Meaning - Viktor Frankl
 - Project Hail Mary - Andy Weir
 - American Kingpin - Nick Bilton
+- The Autobiography of Malcolm X - Alex Haley 
+- My Life - Fidel Castro
+- Che Guevara: A Revolutionary Life  - Jon Lee Anderson 
+-  Tender Is the Flesh - Agustina Bazterrica
