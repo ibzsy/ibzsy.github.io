@@ -19,3 +19,6 @@ Gemfile.lock
 
 # Ignore Public Build Files
 public/
+
+# Ignore Mac Specifc Stuff
+.DS_Store
