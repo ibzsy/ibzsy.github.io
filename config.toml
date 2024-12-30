@@ -21,13 +21,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     url = "/"
     weight = 10
 
-  [[menu.main]]
-    identifier = "books"
-    name = "books"
-    title = "books"
-    url = "/books/"
-    weight = 20
-
 [permalinks]
   posts = "/:title/"
 
