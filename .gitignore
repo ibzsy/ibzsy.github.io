@@ -22,3 +22,6 @@ public/
 
 # Ignore Mac Specifc Stuff
 .DS_Store
+
+#Static Build Stuff
+resources/

@@ -1,6 +1,6 @@
 +++
-author = "Ibrahim"
-title = "On New Year Resolutions"
+author = "ibrahim"
+title = "on new year resolutions"
 date = "2024-12-30"
 description = ""
 +++

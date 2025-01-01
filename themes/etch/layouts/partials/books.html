@@ -1,0 +1,10 @@
+<h3>books</h3>
+<ul id="posts">
+    {{- range where .Site.RegularPages "Section" "books" }}
+    <li>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+    </li>
+    {{- end }}
+</ul>

@@ -1,6 +1,6 @@
 +++
-author = "Ibrahim"
-title = "On Life"
+author = "ibrahim"
+title = "on life"
 date = "2024-11-28"
 description = ""
 +++

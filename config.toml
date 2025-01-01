@@ -1,6 +1,6 @@
 baseURL = "https://ibzsy.github.io/"
 title = "ibzsy"
-theme = "etch"
+theme = ["etch", "hugo-shortcode-gallery"]
 languageCode = "en-UK"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
@@ -9,20 +9,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   description = "ibzsy's blog"
-  copyright = "Copyright © 2024 Ibrahim"
-  dark = "auto"
+  copyright = "copyright © 2025 Ibrahim"
+  dark = "on"
   highlight = true
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
-
-[permalinks]
-  posts = "/:title/"
 
 [taxonomies]
   tag = nan
