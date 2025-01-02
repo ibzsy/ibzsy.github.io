@@ -1,5 +1,29 @@
+<script>
+    var options = {
+        timeZone: 'Europe/London',
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    }
+    formatter = new Intl.DateTimeFormat([], options);
+
+    const updateDateTime = () => {
+        document.getElementById('output').innerHTML = formatter.format(new Date());
+    }
+
+    window.onload = updateDateTime
+    setInterval(updateDateTime, 1000);
+</script>
+
+
 <header id="banner">
-    <h2>
-        <a style="color: #00b1ed;" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </h2>
+    <div style="display: flex; align-items: center; ">
+        <h2>
+            <a style="color: #00b1ed;" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </h2>
+        <p id="output" style="justify-content: left; margin-left: auto;"></p>
+    </div>
 </header>
