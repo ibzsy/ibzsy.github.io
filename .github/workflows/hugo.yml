@@ -52,8 +52,8 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Run Site Scripts
         run: |
-          for script in scripts/*.go; do
-            go run "$script"
+          for script in scripts/*.rb; do
+            ruby "$script"
           done
       - name: Build with Hugo
         env:
