@@ -1,9 +1,10 @@
-<h3>books</h3>
-<ul id="posts">
-    {{- range where .Site.RegularPages "Section" "books" }}
+<!-- filepath: /Users/ibrahim/projects/ibzsy.github.io/themes/etch/layouts/partials/books.html -->
+<h4>books i've read</h4>
+<ul id="books">
+    {{- range .Site.Data.goodreads_books.read_books }}
     <li>
-        <a href="{{ .Permalink }}">
-            {{ .Title }}
+        <a href="{{ .link }}">
+            {{ .title }}
         </a>
     </li>
     {{- end }}
