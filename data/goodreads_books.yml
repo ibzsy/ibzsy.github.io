@@ -2,18 +2,14 @@
 read_books:
 - title: 'nuclear folly: a history of the cuban missile crisis'
   link: https://www.goodreads.com/review/show/7033109872?utm_medium=api&utm_source=rss
+  author: serhii plokhy
 - title: 'digital minimalism: choosing a focused life in a noisy world'
   link: https://www.goodreads.com/review/show/6455770826?utm_medium=api&utm_source=rss
+  author: cal newport
 - title: 'atomic habits: an easy & proven way to build good habits & break bad ones'
   link: https://www.goodreads.com/review/show/7009291375?utm_medium=api&utm_source=rss
-- title: man's search for meaning
-  link: https://www.goodreads.com/review/show/6922630805?utm_medium=api&utm_source=rss
-- title: 'american kingpin: the epic hunt for the criminal mastermind behind the silk
-    road'
-  link: https://www.goodreads.com/review/show/6272982716?utm_medium=api&utm_source=rss
-- title: tender is the flesh
-  link: https://www.goodreads.com/review/show/5550454502?utm_medium=api&utm_source=rss
-- title: a thousand splendid suns
-  link: https://www.goodreads.com/review/show/4854266520?utm_medium=api&utm_source=rss
-- title: the autobiography of malcolm x
-  link: https://www.goodreads.com/review/show/4845163332?utm_medium=api&utm_source=rss
+  author: james clear
+current_book:
+- title: think and grow rich
+  link: https://www.goodreads.com/review/show/7170615643?utm_medium=api&utm_source=rss
+  author: napoleon hill

@@ -1,3 +1,4 @@
 <footer id="footer">
-    version: {{ index .Site.Data.site_version "version" }}
+    build info <br /> {{ index .Site.Data.build_information "date" }} <br />
+    {{ index .Site.Data.build_information "build" }}
 </footer>
