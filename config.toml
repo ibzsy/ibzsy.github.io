@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   description = "ibzsy's blog"
   copyright = "copyright © 2025 Ibrahim"
-  dark = "on"
+  dark = "auto"
   highlight = true
 
 
