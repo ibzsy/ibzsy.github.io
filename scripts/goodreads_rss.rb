@@ -10,7 +10,9 @@ file_path = 'data/goodreads_books.yml'
 currently_reading_book = []
 read_books = []
 
+# Regular expressions to extract the author's name and book link from the description
 author_regex = %r{author:\s*(.*?)<br/>}
+book_link_regex = /<a href="(.*?)">/
 
 # Fetch and parse the RSS feed for read books
 URI.parse(books_read_url).open do |rss|
@@ -19,9 +21,11 @@ URI.parse(books_read_url).open do |rss|
   items.first(3).each do |item|
     author_match = item.description.match(author_regex)
     author = author_match ? author_match[1] : 'unknown'
+    book_link_match = item.description.match(book_link_regex)
+    book_link = book_link_match ? book_link_match[1] : item.link
     read_books << {
       'title' => item.title.downcase,
-      'link' => item.link,
+      'link' => book_link,
       'author' => author.downcase
     }
   end
@@ -33,9 +37,11 @@ URI.parse(currently_reading_url).open do |rss|
   item = feed.items.first
   author_match = item.description.match(author_regex)
   author = author_match ? author_match[1] : 'unknown'
+  book_link_match = item.description.match(book_link_regex)
+  book_link = book_link_match ? book_link_match[1] : item.link
   currently_reading_book << {
     'title' => item.title.downcase,
-    'link' => item.link,
+    'link' => book_link,
     'author' => author.downcase
   }
 end
