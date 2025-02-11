@@ -23,4 +23,10 @@
         </h2>
         <p id="output" style="justify-content: left; margin-left: auto;"></p>
     </div>
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%;"></div>
+    {{ with .Site.Data.daily_quote }}
+    &ldquo;{{ .quote }}&rdquo; &mdash;
+    {{ .author }}
+    {{ end }}
+    </div>
 </header>
