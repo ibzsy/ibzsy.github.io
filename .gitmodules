@@ -1,0 +1,4 @@
+[submodule "themes/serene"]
+	path = themes/serene
+	url = https://github.com/ibzsy/serene.git
+	branch = main
