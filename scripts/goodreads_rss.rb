@@ -34,15 +34,16 @@ end
 # Fetch and parse the RSS feed for currently reading book
 URI.parse(currently_reading_url).open do |rss|
   feed = RSS::Parser.parse(rss)
-  item = feed.items.first
-  author_match = item.description.match(author_regex)
-  author = author_match ? author_match[1] : 'unknown'
-  book_link_match = item.description.match(book_link_regex)
-  book_link = book_link_match ? book_link_match[1] : item.link
-  currently_reading_book << {
-    'title' => item.title.downcase,
-    'link' => book_link,
-    'author' => author.downcase
+  items = feed.items.sort_by { |item| Time.parse(item.pubDate.to_s) }.reverse
+  items.first(3).each do |item|
+    author_match = item.description.match(author_regex)
+    author = author_match ? author_match[1] : 'unknown'
+    book_link_match = item.description.match(book_link_regex)
+    book_link = book_link_match ? book_link_match[1] : item.link
+    currently_reading_book << {
+      'title' => item.title.downcase,
+      'link' => book_link,
+      'author' => author.downcase
   }
 end
 
