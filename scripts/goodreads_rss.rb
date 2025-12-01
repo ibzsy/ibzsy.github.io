@@ -45,6 +45,7 @@ URI.parse(currently_reading_url).open do |rss|
       'link' => book_link,
       'author' => author.downcase
   }
+  end
 end
 
 # Write the data to the YAML file
